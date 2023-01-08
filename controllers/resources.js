@@ -5,13 +5,13 @@ function index(req, res) {
   .then(resources => {
     res.render('resources/index', {
       resources: resources
-    })
+    });
   })
   .catch(error => {
     console.log(error);
-    res.redirect('/')
-  }) 
-}
+    res.redirect('/');
+  }) ;
+};
 
 export {
   index

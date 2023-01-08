@@ -1,11 +1,11 @@
 import { Router } from 'express'
 
-const router = Router()
+const router = Router();
 
-/* GET home page. */
+// GET
 router.get('/', function(req, res) {
-  res.render('index')
-})
+  res.render('index');
+});
 
 export { 
   router
