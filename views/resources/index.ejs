@@ -5,10 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title>Index</title>
+  <title><%= resources %></title>
 </head>
 <body>
-  <h1>Index</h1>
-  <a href="/resources">Link to resources page</a>
+  <h1>Current stored resources:</h1>
+  <% resources.forEach(resource => { %>
+    <p><%= resource %> </p>
+  <% }) %> 
+  <a href="/">Link to index page</a>
 </body>
 </html>
